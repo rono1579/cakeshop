@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 330 20% 98%;
+    --foreground: 330 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 330 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 330 10% 10%;
+
+    --primary: 330 85% 60%;
+    --primary-foreground: 355 100% 98%;
+
+    --secondary: 164 40% 90%;
+    --secondary-foreground: 164 50% 20%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 330 10% 40%;
+
+    --accent: 42 100% 70%;
+    --accent-foreground: 42 50% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 10% 90%;
+    --input: 330 10% 90%;
+    --ring: 330 85% 60%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 330 30% 10%;
+    --foreground: 330 10% 95%;
+
+    --card: 330 30% 15%;
+    --card-foreground: 330 10% 95%;
+
+    --popover: 330 30% 15%;
+    --popover-foreground: 330 10% 95%;
+
+    --primary: 330 75% 60%;
+    --primary-foreground: 330 10% 95%;
+
+    --secondary: 164 30% 25%;
+    --secondary-foreground: 164 30% 95%;
+
+    --muted: 330 20% 20%;
+    --muted-foreground: 330 10% 70%;
+
+    --accent: 42 70% 50%;
+    --accent-foreground: 42 10% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 330 30% 25%;
+    --input: 330 30% 25%;
+    --ring: 330 75% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .cake-card {
+    @apply relative overflow-hidden rounded-lg bg-white shadow-md transition-all duration-300 hover:shadow-xl;
+  }
+  
+  .cake-button {
+    @apply rounded-full bg-primary px-6 py-2 font-medium text-primary-foreground transition-all duration-300 hover:bg-primary/90;
+  }
+  
+  .section-title {
+    @apply font-serif text-3xl font-bold text-foreground md:text-4xl;
+  }
+  
+  .cake-tag {
+    @apply rounded-full bg-secondary px-4 py-1 text-sm font-medium text-secondary-foreground;
+  }
+}

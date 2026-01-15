@@ -1,0 +1,15 @@
+{
+  "name": "sweet-treats",
+  "version": "1.0.0",
+  "description": "Sweet Treats cake customization store",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd server && npm run dev\"",
+    "build": "npm run build -w frontend && npm run build -w server",
+    "install": "pnpm install"
+  }
+}
