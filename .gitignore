@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+sweet-cakes-13b-firebase-adminsdk-fbsvc-b4491d5edb.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
