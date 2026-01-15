@@ -41,8 +41,8 @@ A modern, full-stack e-commerce platform for custom cake orders, built with Reac
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rono1579/sweet-treats-cakes.git
-   cd sweet-treats-cakes
+   git clone https://github.com/rono1579/cakeshop.git
+   cd cakeshop
    ```
 
 2. **Install dependencies**
@@ -98,7 +98,7 @@ A modern, full-stack e-commerce platform for custom cake orders, built with Reac
 ## 📂 Project Structure
 
 ```
-sweet-treats-cakes/
+cakeshop/
 ├── frontend/               # React frontend
 │   ├── public/             # Static files
 │   ├── src/                # Source code
