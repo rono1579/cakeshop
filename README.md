@@ -41,7 +41,7 @@ A modern, full-stack e-commerce platform for custom cake orders, built with Reac
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/sweet-treats-cakes.git
+   git clone https://github.com/rono1579/sweet-treats-cakes.git
    cd sweet-treats-cakes
    ```
 
